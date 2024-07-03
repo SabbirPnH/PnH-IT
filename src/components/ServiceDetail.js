@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark, faShareAlt } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import serviceData from '../../src/data/serviceData';  
+import serviceData from '@/data/serviceData';  
 import serviceSocial from '../../src/data/ServiceSocial';  
 import cardsData from '../../src/data/CardData';  
 import Loading from '@/components/Loading';

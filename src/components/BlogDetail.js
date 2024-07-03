@@ -3,7 +3,7 @@
 import React from 'react';
 import { useParams } from 'next/navigation';
 import PropTypes from 'prop-types';
-import blogsData from '../../src/data/blogData';  
+import blogsData from '@/data/blogData';  
 import ErrorPage from '@/components/404Page';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
