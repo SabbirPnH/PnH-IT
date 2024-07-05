@@ -10,7 +10,7 @@ const Contact = () => {
                         Contact Us
                         </h2>
                         <p className="text-slate-600 text-lg breck-all">
-						Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.
+						We list your menu online, help you process orders.
 
                         </p>
                     </div>
