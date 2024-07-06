@@ -40,7 +40,7 @@ const clientimgs = [
 const Clientimg = () => {
 	return (
 		
-			<section className="ezy__clients4 light sm:py-14 md:pb-10  sm:px-16 xl:px-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+			<section className="ezy__clients4 light py-5 sm:py-14 md:pb-10  sm:px-16 xl:px-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
 			<div className="container px-5 mx-auto" data-aos="zoom-out">
 			<div className="flex justify-center text-center mb-6 lg:mb-12">
                     <div className="w-full max-w-2xl">  

@@ -52,7 +52,7 @@ const FAQSection = () => {
             <img
               src='https://media.istockphoto.com/id/1349998432/photo/3d-render-of-faqs-business-concept.jpg?b=1&s=612x612&w=0&k=20&c=kGtU1mqoPwP9se3mpXxw9q4bZEITSfE2kwfubZMgzgE='
               alt="FAQ image"
-              className="w-full h-[500px]"
+              className="w-full h-[500px] rounded-sm"
             />
           </div>
           <div className="w-full lg:w-1/2">

@@ -65,7 +65,7 @@ const ServiceCard = () => {
   return (
     <div>
       <div style={styles.container}>
-        <div className='grid grid-cols-1 gap-5 sm:gap-8 lg:gap-16 sm:px-5 sm:grid-cols-2 xl:grid-cols-3 py-16'>
+        <div className='grid grid-cols-1 gap-5 sm:gap-8 lg:gap-16 sm:px-5 sm:grid-cols-2 xl:grid-cols-3 sm:py-10'>
           {cardsData.map((card, id) => (
             <div
               key={id}

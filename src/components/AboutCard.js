@@ -2,7 +2,7 @@
 
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import AboutConten from "@/components/AboutConten";
+
 
 
 import {
@@ -19,6 +19,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import AboutConten from "./AboutConten";
+
 
 
 
@@ -112,7 +114,7 @@ const ShapeOne = () => (
 
 const AboutCard = () => {
   return (
-    <section className="ezy__about17 light   sm:pb-14 lg:pb-0  dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden ">
+    <section className="ezy__about17 light   sm:pb-14 lg:pb-0  dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden my-5">
       
 
       <div className="container lg:ml-14 px-5">
@@ -161,7 +163,7 @@ const AboutCard = () => {
           </div>
         </div>
       </div>
-      {/* <AboutConten/> */}
+     <AboutConten/>
     </section>
   );
 };
