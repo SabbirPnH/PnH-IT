@@ -1,5 +1,5 @@
 import React from "react";
-
+import Marquee from "react-fast-marquee";
 
 
 const clientimgs = [
@@ -53,7 +53,7 @@ const Clientimg = () => {
                     </div>
                 </div>
 
-				<marquee behavior="scroll" direction="left" loop>
+				<Marquee>
 					<div  className="flex justify-center items-center text-center">
 						{clientimgs.map((client, i) => (
 							<img
@@ -64,7 +64,7 @@ const Clientimg = () => {
 							/>
 						))}
 					</div>
-				</marquee>
+				</Marquee>
 			</div>
 		</section>
 	
@@ -72,3 +72,21 @@ const Clientimg = () => {
 	);
 };
 export default Clientimg;
+
+
+// import React from "react";
+
+// import Marquee from "react-fast-marquee";
+
+// const Clientimg = () => (
+//   <Marquee>
+//    qwertyujikl
+//   </Marquee>
+// );
+
+// export default Clientimg;
+
+
+
+
+

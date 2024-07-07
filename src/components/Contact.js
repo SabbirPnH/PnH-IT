@@ -4,15 +4,15 @@ const Contact = () => {
     return (
         <div>
             <section className="mb-32">
-            <div className="flex justify-center text-center mb-6 lg:mb-12">
-                    <div className="w-full max-w-2xl px-5">  
+                <div className="flex justify-center text-center mb-6 lg:mb-12">
+                    <div className="w-full max-w-2xl py-8 px-5">
                         <h2 className="text-3xl leading-none md:text-[45px] font-bold mb-6">
-                        Contact Us
+                            Contact Us
                         </h2>
-                        <p className="text-slate-600 text-lg breck-all">
-						We list your menu online, help you process orders.
+                        {/* <p className="text-slate-600 text-lg breck-all">
+                            We list your menu online, help you process orders.
 
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 <div id="map" className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
@@ -71,19 +71,19 @@ const Contact = () => {
                                         <div className="flex items-start">
                                             <div className="shrink-0">
                                                 <div className="inline-block rounded-md bg-[#1d294f] p-4 text-primary">
-                                                <a href="https://goo.gl/maps/f5CZMwnqFg3qsXfL9" target="_blank" className="cursor-pointer">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-[#F68921]">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                                </svg>
-                                                </a>
+                                                    <a href="https://goo.gl/maps/f5CZMwnqFg3qsXfL9" target="_blank" className="cursor-pointer">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-[#F68921]">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                                        </svg>
+                                                    </a>
 
                                                 </div>
                                             </div>
                                             <div className="ml-6 grow">
                                                 <p className="mb-2 font-bold text-zinc-900">Location:</p>
                                                 <p className="text-[#F68921]">184, Razia Plaza. Level-6, Mirpur-10, Dhaka-1216, Bangladesh</p>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -91,18 +91,18 @@ const Contact = () => {
                                         <div className="flex items-start">
                                             <div className="shrink-0">
                                                 <div className="inline-block rounded-md bg-[#1d294f] p-4 text-primary">
-                                                <a href="mailto:info@it.pnhbd.com" target="_blank" className="cursor-pointer">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#F68921]">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                                                </svg>
-                                                </a>
+                                                    <a href="mailto:info@it.pnhbd.com" target="_blank" className="cursor-pointer">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#F68921]">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                                        </svg>
+                                                    </a>
 
                                                 </div>
                                             </div>
                                             <div className="ml-6 grow">
                                                 <p className="mb-2 font-bold text-zinc-900 ">Email:</p>
-                                                <p><a className="decoration-none cursor-pointer text-[#F68921]" href="mailto:info@it.pnhbd.com">info@it.pnhbd.com</a></p>
-                                                
+                                                <p><a className="decoration-none cursor-pointer text-[#F68921]" href="mailto:info@it.pnhbd.com">it@pnhbd.com</a></p>
+
                                             </div>
                                         </div>
                                     </div>
@@ -110,18 +110,18 @@ const Contact = () => {
                                         <div className="flex items-start">
                                             <div className="shrink-0">
                                                 <div className="inline-block rounded-md bg-[#1d294f] p-4 text-primary">
-                                                <a href="mailto:info@it.pnhbd.com" className="cursor-pointer" target="_blank"> 
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#F68921]">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                                                </svg>
-                                                </a>
+                                                    <a href="mailto:info@it.pnhbd.com" className="cursor-pointer" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#F68921]">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                                        </svg>
+                                                    </a>
 
                                                 </div>
                                             </div>
                                             <div className="ml-6 grow">
                                                 <p className="mb-2 font-bold text-zinc-900">Call:</p>
                                                 <p><a className="decoration-none cursor-pointer text-[#F68921]" href="tel:+8801873003333">+880 1873 003333</a></p>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -129,18 +129,18 @@ const Contact = () => {
                                         <div className="flex items-start">
                                             <div className="shrink-0">
                                                 <div className="inline-block rounded-md bg-[#1d294f] p-4 text-primary">
-                                               <a href="tel:+8801873003333" className="cursor-pointer" target="_blank">
-                                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#F68921]">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
-                                                </svg>
-                                               </a>
+                                                    <a href="tel:+8801873003333" className="cursor-pointer" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#F68921]">
+                                                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                                                        </svg>
+                                                    </a>
 
                                                 </div>
                                             </div>
                                             <div className="ml-6 grow">
                                                 <p className="mb-2 font-bold text-zinc-900">WhatsApp</p>
                                                 <p><a className="decoration-none cursor-pointer text-[#F68921]" href="http://wa.me/8801873003333">+880 1873 003333</a></p>
-                                                
+
                                             </div>
                                         </div>
                                     </div>

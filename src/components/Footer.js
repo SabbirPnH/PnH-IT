@@ -48,7 +48,7 @@ Mirpur-10, Dhaka-1216, Bangladesh
                     <ul className="grid gap-2 text-center lg:text-left">
                         <li><a href="javascript:;"  className="text-white hover:text-[#F68921] xl:whitespace-nowrap font-bold">Phone: <span className='text-[#F68921] '>+880 1873 003333</span>
                         </a></li>
-                        <li><a href="javascript:;"  className="text-white hover:text-[#F68921] font-bold">Email: <span className='text-[#F68921]'>info@it.pnhbd.com</span>
+                        <li><a href="javascript:;"  className="text-white hover:text-[#F68921] font-bold">Email: <span className='text-[#F68921]'>it@pnhbd.com</span>
                         </a></li>
                         
                     </ul>
@@ -58,9 +58,9 @@ Mirpur-10, Dhaka-1216, Bangladesh
             </div>
             <div className="py-9 border-t border-gray-200">
                 <div className="flex items-center justify-center flex-col gap-8 lg:gap-0 sm:flex-row sm:justify-between">
-                    <span className="text-sm text-gray-200 flex">Copyright ©  <a href="https://pagedone.io/"> <span className="font-semibold text-[#F68921]"> Pnh It Solution. </span> </a> All Rights Reserved.<span className="hidden lg:block">Developed by Pnh It Solution </span>
+                    <span className="text-sm text-gray-200 flex">Copyright ©  <a href="https://pagedone.io/"> <span className="font-semibold text-[#F68921]"> PnH IT Solution. </span> </a> All Rights Reserved.<span className="hidden lg:block">Developed by PnH IT Solution </span>
                     </span>
-                    <p className="text-white text-sm block lg:hidden -mt-2.5">Developed by Pnh It Solution</p>
+                    <p className="text-white text-sm block lg:hidden -mt-2.5">Developed by PnH IT Solution</p>
                     
                     <div className="flex space-x-6 sm:justify-center">
     <a href="http://fb.com/pnhitsolution/" className="group flex justify-center items-center">

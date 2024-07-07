@@ -2,7 +2,7 @@
 
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AboutConten from "@/components/AboutConten";
+// import AboutConten from "@/components/AboutConten";
 
 
 import {
@@ -25,19 +25,19 @@ import Link from "next/link";
 const stories = [
   {
     icon: 'img/top-rated.png',
-    title: "Top Rank On Fiverr",
+    title: "Highlight the Achievement",
   },
   {
     icon: '/img/review.png',
-    title: "200+ 5 star Review",
+    title: "User Experience ",
   },
   {
     icon: '/img/seo.png',
-    title: "Top Rank on Dribbble",
+    title: "On-Page SEO",
   },
   {
     icon: '/img/best-seller.png',
-    title: "Top Seller on Upwork",
+    title: "Unique Selling Proposition",
   },
 ];
 
@@ -161,7 +161,7 @@ const AboutCard = () => {
           </div>
         </div>
       </div>
-      <AboutConten/>
+      {/* <AboutConten/> */}
     </section>
   );
 };

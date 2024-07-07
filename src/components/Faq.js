@@ -50,7 +50,7 @@ const FAQSection = () => {
         <div className="flex flex-col justify-center items-center gap-x-10 gap-y-5 xl:gap-16 lg:flex-row lg:justify-between max-lg:max-w-2xl mx-auto max-w-full">
           <div className="w-full  lg:w-1/2">
             <img
-              src='/img/faq.png'
+              src='https://media.istockphoto.com/id/1349998432/photo/3d-render-of-faqs-business-concept.jpg?b=1&s=612x612&w=0&k=20&c=kGtU1mqoPwP9se3mpXxw9q4bZEITSfE2kwfubZMgzgE='
               alt="FAQ image"
               className="w-full h-[500px]"
             />
@@ -63,7 +63,7 @@ const FAQSection = () => {
                 <span className='text-gray-500'>Frequently Asked</span> <span className='text-[#F68921] font-bold'>Questions</span>
                 </h2>
                 <h6 className="text-lg text-center font-medium text-gray-600 mb-2 lg:text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Make every customer more successful by giving them the exact information they need, right when they need it.
 
 
                 </h6>
