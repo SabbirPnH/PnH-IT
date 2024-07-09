@@ -47,7 +47,7 @@ const VideoModal = () => {
                                 {/* Example content */}
                                 Video production services make videos for others, such as businesses, organizations, individuals, and creative agencies.
                             </p>
-                            <h4 className="text-lg xl:text-xl italic font-medium mb-2">Anderson</h4>
+                            <h4 className="text-lg xl:text-xl italic font-medium mb-2">Iftekhar Mahmud</h4>
                             <p className="opacity-80 py-2">CEO & Founder at Company</p>
                             <div className="flex">
                                 <button className="px-4 inline-block py-2.5 text-sm rounded font-bold text-white border-2 border-[#1d294f] bg-[#1d294f] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#1d294f] flex items-center space-x-2">

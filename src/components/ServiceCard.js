@@ -87,7 +87,7 @@ const ServiceCard = () => {
                   {card.details}
                 </p>
                 <h3 style={{ ...styles.details, opacity: hoveredIndex === id ? 1 : 0 }} onClick={() => handleServiceDetailsClick(id)}>
-                  Event details
+                 Service details
                 </h3>
               </div>
             </div>

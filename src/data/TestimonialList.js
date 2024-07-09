@@ -2,7 +2,7 @@ const testimonialList = [
 	{
 		author: {
 			fullName: "Mr. Mamun",
-			picture: "/img/testimonials/2.jpg",
+			picture: "/img/testimonials/5.jpg",
 			designation: "Founder & CEO of NLEXIC",
 		},
 		rating: 3.5,
@@ -13,7 +13,7 @@ const testimonialList = [
 		author: {
 			fullName: "Mohammad Aminur Rahman",
 			picture:
-				"/img/testimonials/1.jpg",
+				"/img/testimonials/5.jpg",
 			designation: `Founder & CEO of Mor Suraha Adjunct Faculty JU & GUB` ,
 		},
 		rating: 4,
@@ -24,7 +24,7 @@ const testimonialList = [
 		author: {
 			fullName: "Mohammad Sohel",
 			picture:
-				"/img/testimonials/3.jpg",
+				"/img/testimonials/5.jpg",
 			designation: "Managing Director of Samir Group",
 		},
 		rating: 5,
@@ -36,7 +36,7 @@ const testimonialList = [
 		author: {
 			fullName: "Abdul Hamid Gazi",
 			picture:
-				"img/testimonials/4.jpg",
+				"img/testimonials/5.jpg",
 			designation: "Founder of Alifa Group LTD",
 		},
 		rating: 5,
