@@ -14,8 +14,8 @@ import {
 import {
   faFacebookF,
   faLinkedinIn,
-  faPinterestP,
-  faTwitter,
+  faWhatsapp,
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import PropTypes from "prop-types";
 import Link from "next/link";
@@ -24,41 +24,41 @@ import AboutConten from "./AboutConten";
 
 
 
-const stories = [
-  {
-    icon: 'img/top-rated.png',
-    title: "Highlight the Achievement",
-  },
-  {
-    icon: '/img/review.png',
-    title: "User Experience ",
-  },
-  {
-    icon: '/img/seo.png',
-    title: "On-Page SEO",
-  },
-  {
-    icon: '/img/best-seller.png',
-    title: "Unique Selling Proposition",
-  },
-];
+// const stories = [
+//   {
+//     icon: 'img/top-rated.png',
+//     title: "Highlight the Achievement",
+//   },
+//   {
+//     icon: '/img/review.png',
+//     title: "User Experience ",
+//   },
+//   {
+//     icon: '/img/seo.png',
+//     title: "On-Page SEO",
+//   },
+//   {
+//     icon: '/img/best-seller.png',
+//     title: "Unique Selling Proposition",
+//   },
+// ];
 
 const social = [
   {
     icon: faFacebookF,
-    link: "#",
+    link: "https://www.facebook.com/pnhitsolution",
   },
   {
-    icon: faTwitter,
-    link: "#",
+    icon: faWhatsapp,
+    link: "https://api.whatsapp.com/send/?phone=8801914436613&text&type=phone_number&app_absent=0",
   },
   {
-    icon: faPinterestP,
+    icon: faYoutube,
     link: "#",
   },
   {
     icon: faLinkedinIn,
-    link: "#",
+    link: "https://www.linkedin.com/company/pnh-corporation",
   },
 ];
 
@@ -133,15 +133,17 @@ const AboutCard = () => {
               </h2>
               <p data-aos="fade-up"
               data-aos-duration="1500" className="text-base sm:text-lg leading-relaxed opacity-80 my-6 lg:pr-12 break-all">
-              We pride ourselves on delivering high-quality solutions on time and within budget, while maintaining strong communication and transparency throughout the entire process.
+              Welcome to PnH IT Solution, your trusted partner in navigating the complexities of today's digital landscape. We are a premier provider of transformative IT solutions, dedicated to empowering businesses worldwide with innovative technology services. At PnH IT Solution, we combine a steadfast commitment to excellence with a passion for innovation, delivering cutting-edge solutions tailored to meet the dynamic needs of modern enterprises.
+
+
               </p>
-              <div className="grid grid-cols-12 gap-10">
+              {/* <div className="grid grid-cols-12 gap-10">
                 {stories.map((item, i) => (
                   <div className="col-span-12 sm:col-span-6 flex justify-start" key={i}>
                     <StoryItem item={item} />
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col sm:flex-row mt-12">
               <Link href="/about">
@@ -149,7 +151,7 @@ const AboutCard = () => {
                 
                 className="whitespace-nowrap px-10 py-3 border-2 border-[#0b1727] dark:border-white bg-[#1d294f] hover:border-[#1d294f] text-center text-white rounded transition"
               >
-                About Me
+                About Us
               </button>
               </Link>
               <div className="flex justify-center md:ml-12 mt-4 sm:mt-0">

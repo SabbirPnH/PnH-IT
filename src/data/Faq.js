@@ -1,32 +1,30 @@
 const faqsData = [
   {
-    question: 'Simply a better way to explain?',
+    question: 'What is IT?',
 
 
-    answer: ` Personalized stepped guides are the fastest, most enjoyable way for customers to help themselves
-
-
-      `,
+    answer: ` Information Technology (IT) encompasses the use of computers, networks, software, and other technology to manage and process information.`,
+   
   },
   {
-    question: 'A joy to create and a breeze to update?',
+    question: 'What does IT support involve?',
 
 
-    answer: `Dynamic, personal & multi-media, Stonly makes it easy to create success content that shines - no coding required!`,
+    answer: `IT support includes providing assistance with computer hardware, software, networks, and related issues to ensure smooth operation and user productivity.`,
   },
   {
-    question: 'Encourage self-service, don’t force it?',
-    answer: ` As customers input information for ticket submission, your Stonly KB shows them specific solution steps that are personal and relevant; allowing them to choose
+    question: 'How do I troubleshoot common computer problems?',
+    answer: ` Common troubleshooting steps include restarting the computer, checking connections, updating software, scanning for viruses, and seeking online resources or support forums for specific issues.
 
 .`,
   },
   {
-    question: 'Unleash help content everywhere?',
-    answer: `Stonly’s KB fits right in our chat widget anywhere in your app or on your website with content built perfectly for the chat bot experience`,
+    question: 'How can I secure my computer/network?',
+    answer: `Ensure strong passwords, keep software up to date, use antivirus software, enable firewalls, avoid suspicious links and downloads, and implement encryption where necessary.`,
   },
   {
-    question: 'Search for an article? That’s so archaic?',
-    answer: `Stonly content is structured by step and user situation, so search takes customers right to the exact step of a personalized solution.`,
+    question: 'What are backups, and why are they important?',
+    answer: `Backups are copies of important data stored separately from the original to protect against data loss due to hardware failure, theft, or other disasters.`,
   },
 ];
 export default faqsData;

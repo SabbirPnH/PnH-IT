@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const stories = [
 	{
-		text: "Beautiful and easy to understand UI.",
+		text: "E-commerce Solutions.",
 	},
 	{
 		text: "Theme advantages are pixel perfect design & clear code",

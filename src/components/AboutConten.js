@@ -7,8 +7,8 @@ const AboutConten = () => {
        <section className="text-gray-400 bg-[#18181B] body-font">
       <div className="container px-5 py-10 mt-20 mx-auto">
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-center text-white mb-20">
-      Describes the purpose, mission, and background of 
-          <br className="hidden sm:block" />the website or organization.
+      PnH IT is an IT based web design development and  
+          <br className="hidden sm:block" />software development service organization.
         </h1>
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           {contenData.map((conten, index) => (

@@ -45,7 +45,7 @@ const VideoModal = () => {
                         <div className="flex flex-col pt-4 h-full">
                             <p className="relative text-zinc-900 text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[32px] font-bold mb-6 md:mb-5 z-[1]">
                                 {/* Example content */}
-                                Video production services make videos for others, such as businesses, organizations, individuals, and creative agencies.
+                                Create step-by-step tutorials on using specific software (e.g., Microsoft Office, Adobe Creative Suite).
                             </p>
                             <h4 className="text-lg xl:text-xl italic font-medium mb-2">Iftekhar Mahmud</h4>
                             <p className="opacity-80 py-2">CEO & Founder at Company</p>
