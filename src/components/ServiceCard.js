@@ -2,6 +2,12 @@
 
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { useMediaQuery } from 'react-responsive';
 
 const cardsData = [
   {
@@ -57,6 +63,7 @@ const cardsData = [
 const ServiceCard = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const router = useRouter();
+  const isMobile = useMediaQuery({ query: '(max-width: 640px)' }); // Tailwind's sm breakpoint
 
   const handleServiceDetailsClick = (id) => {
     router.push(`/service/${id}`);
@@ -64,36 +71,83 @@ const ServiceCard = () => {
 
   return (
     <div>
-      <div style={styles.container}>
-        <div className='grid grid-cols-1 gap-5 sm:gap-8 lg:gap-16 sm:px-5 sm:grid-cols-2 xl:grid-cols-3 sm:py-10'>
-          {cardsData.map((card, id) => (
-            <div
-              key={id}
-              style={styles.card}
-              onMouseEnter={() => setHoveredIndex(id)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              data-aos="zoom-in"
-              data-aos-delay={`${(id + 1) * 200}`}
-            >
-              <div style={{ ...styles.thumb, backgroundImage: `url(${card.imgSrc})` }}></div>
-              <div style={{ ...styles.infos, transform: hoveredIndex === id ? `translateY(-${styles.thumb.height})` : 'translateY(0)' }}>
-                <h2 style={styles.title}>
-                  {card.title}
-                  <span style={{ ...styles.flag, backgroundImage: `url(${card.image})` }}></span>
-                </h2>
-                <h3 style={styles.date}>{card.date}</h3>
-                <h3 style={{ ...styles.seats, opacity: hoveredIndex === id ? 1 : 0 }}>{card.seats}</h3>
-                <p style={{ ...styles.txt, opacity: hoveredIndex === id ? 1 : 0 }}>
-                  {card.details}
-                </p>
-                <h3 style={{ ...styles.details, opacity: hoveredIndex === id ? 1 : 0 }} onClick={() => handleServiceDetailsClick(id)}>
-                 Service details
-                </h3>
+      {!isMobile && (
+        <div style={styles.container}>
+          <div className='grid grid-cols-1 gap-5 sm:gap-8 lg:gap-16 sm:px-5 sm:grid-cols-2 xl:grid-cols-3'>
+            {cardsData.map((card, id) => (
+              <div
+                key={id}
+                style={styles.card}
+                onMouseEnter={() => setHoveredIndex(id)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                data-aos="zoom-in"
+                data-aos-delay={`${(id + 1) * 200}`}
+              >
+                <div style={{ ...styles.thumb, backgroundImage: `url(${card.imgSrc})` }}></div>
+                <div style={{ ...styles.infos, transform: hoveredIndex === id ? `translateY(-${styles.thumb.height})` : 'translateY(0)' }}>
+                  <h2 style={styles.title}>
+                    {card.title}
+                    <span style={{ ...styles.flag, backgroundImage: `url(${card.image})` }}></span>
+                  </h2>
+                  <h3 style={styles.date}>{card.date}</h3>
+                  <h3 style={{ ...styles.seats, opacity: hoveredIndex === id ? 1 : 0 }}>{card.seats}</h3>
+                  <p style={{ ...styles.txt, opacity: hoveredIndex === id ? 1 : 0 }}>
+                    {card.details}
+                  </p>
+                  <h3 style={{ ...styles.details, opacity: hoveredIndex === id ? 1 : 0 }} onClick={() => handleServiceDetailsClick(id)}>
+                    Service details
+                  </h3>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      )}
+      {isMobile && (
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {cardsData.map((card, id) => (
+            <SwiperSlide key={id}>
+              <div
+                key={id}
+                style={styles.card}
+                onMouseEnter={() => setHoveredIndex(id)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                data-aos="zoom-in"
+                data-aos-delay={`${(id + 1) * 200}`}
+              >
+                <div style={{ ...styles.thumb, backgroundImage: `url(${card.imgSrc})` }}></div>
+                <div style={{ ...styles.infos, transform: hoveredIndex === id ? `translateY(-${styles.thumb.height})` : 'translateY(0)' }}>
+                  <h2 style={styles.title}>
+                    {card.title}
+                    <span style={{ ...styles.flag, backgroundImage: `url(${card.image})` }}></span>
+                  </h2>
+                  <h3 style={styles.date}>{card.date}</h3>
+                  <h3 style={{ ...styles.seats, opacity: hoveredIndex === id ? 1 : 0 }}>{card.seats}</h3>
+                  <p style={{ ...styles.txt, opacity: hoveredIndex === id ? 1 : 0 }}>
+                    {card.details}
+                  </p>
+                  <h3 style={{ ...styles.details, opacity: hoveredIndex === id ? 1 : 0 }} onClick={() => handleServiceDetailsClick(id)}>
+                    Service details
+                  </h3>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
     </div>
   );
 };
@@ -105,7 +159,7 @@ const styles = {
     alignItems: 'center',
     minHeight: '100vh',
     backgroundColor: '#fff',
-    padding: '20px',
+    padding: '0px 20px',
   },
   card: {
     position: 'relative',
@@ -152,7 +206,7 @@ const styles = {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     display: 'inline-block',
-    border:'none'
+    border: 'none',
   },
   date: {
     marginBottom: '10px',

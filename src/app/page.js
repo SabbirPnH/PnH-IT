@@ -18,7 +18,8 @@ import AboutCard from "@/components/AboutCard";
 import ServiceCard from "@/components/ServiceCard";
 import ServiceHeading from "@/components/ServiceHeading";
 import HostingCard from "@/components/HostingCard";
-
+import AboutConten from "@/components/AboutConten";
+import DomainMobileView from "@/components/MobileViewDomain";
  
 
 
@@ -34,11 +35,13 @@ export default function Home() {
   return (
     <main>
       <HeroSlider/>
+      <DomainMobileView/>
+      <AboutConten/>
       <Feature/>
       <AboutCard/>
       <ClientLogo/>
       <VideoModal/>
-      <DomainDetails/>
+      <div className='hidden sm:block'><DomainDetails/></div>
       <ServiceHeading/>
      <ServiceCard/>
       <Testimonial/>

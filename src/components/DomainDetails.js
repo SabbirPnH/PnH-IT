@@ -30,18 +30,7 @@ const DomainDetails = () => {
     return (
         <div>
             <section id="features" className="features pt-12">
-                <div className="container mx-auto px-5 sm:px-24" data-aos="fade-up">
-                    {/* Filter Buttons */}
-                    {/* <div className="mb-8 flex justify-center space-x-4">
-                        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300" onClick={() => handleFilterChange('all')}>All</button>
-                        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300" onClick={() => handleFilterChange('tab-1')}>E-commerce</button>
-                        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300" onClick={() => handleFilterChange('tab-2')}>POS/Inventory</button>
-                        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300" onClick={() => handleFilterChange('tab-3')}>Domain & Hosting</button>
-                        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300" onClick={() => handleFilterChange('tab-4')}>School-college</button>
-                        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300" onClick={() => handleFilterChange('tab-5')}>ERP</button>
-                        <button className="px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300" onClick={() => handleFilterChange('tab-6')}>Account Management</button>
-                    </div> */}
-
+                <div className="container mx-auto px-5 sm:px-24" data-aos="fade-up">                  
                     <ul className="nav nav-tabs flex flex-wrap -mx-2">
                         {isTabVisible('tab-1') && (
                             <li className="nav-item w-1/2 md:w-1/3 lg:w-1/6 px-2 mb-4">

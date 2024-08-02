@@ -1,29 +1,29 @@
 const contentData = [
-    {
-      id: 1,
-      title: "About US",
-      description: "PNH IT Solutions is a leading IT firm dedicated to providing innovative and comprehensive technology solutions to businesses of all sizes. With a team of highly skilled professionals and a proven track record of success, we deliver cutting-edge solutions tailored to meet the unique needs and challenges of our clients.",
-      sections: [
-        {
-          category:'Software Development',
-          date:'18 May 2017',
-          heading: "Software Development Solutions",
-          content: "Developing custom software applications to address specific business needs. This could involve programming languages like Python, Java, C++, or web development technologies like HTML, CSS, and JavaScript."
-        },
-        {
-          category:'IT Support',
-          date:'10 July 2019',
-          heading: "IT Support and Managed Services",
-          content: "Outsourcing IT support or opting for managed services to ensure the ongoing maintenance, monitoring, and support of IT systems."
-        },
-        {
-          category:'Infrastructure',
-          date:'03 January 2018',
-          heading: "Infrastructure Solutions",
-          content: "Building and maintaining physical IT infrastructure, including servers, data centers, and storage systems."
-        }
-      ]
-    },
+    // {
+    //   id: 1,
+    //   title: "About US",
+    //   description: "PNH IT Solutions is a leading IT firm dedicated to providing innovative and comprehensive technology solutions to businesses of all sizes. With a team of highly skilled professionals and a proven track record of success, we deliver cutting-edge solutions tailored to meet the unique needs and challenges of our clients.",
+    //   sections: [
+    //     {
+    //       category:'Software Development',
+    //       date:'18 May 2017',
+    //       heading: "Software Development Solutions",
+    //       content: "Developing custom software applications to address specific business needs. This could involve programming languages like Python, Java, C++, or web development technologies like HTML, CSS, and JavaScript."
+    //     },
+    //     {
+    //       category:'IT Support',
+    //       date:'10 July 2019',
+    //       heading: "IT Support and Managed Services",
+    //       content: "Outsourcing IT support or opting for managed services to ensure the ongoing maintenance, monitoring, and support of IT systems."
+    //     },
+    //     {
+    //       category:'Infrastructure',
+    //       date:'03 January 2018',
+    //       heading: "Infrastructure Solutions",
+    //       content: "Building and maintaining physical IT infrastructure, including servers, data centers, and storage systems."
+    //     }
+    //   ]
+    // },
     {
       id: 2,
       title: "Our Mission",

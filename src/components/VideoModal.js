@@ -22,7 +22,7 @@ const VideoModal = () => {
         <section
             data-aos="fade-up"
             data-aos-duration="1500"
-            className="ezy__testimonial17 light pt-5 sm:py-14 md:py-0 sm:bg-gray-100 dark:bg-[#0b1727] text-zinc-900 dark:text-white"
+            className="ezy__testimonial17 hidden sm:block light pt-5 sm:py-14 md:py-0 sm:bg-gray-100 dark:bg-[#0b1727] text-zinc-900 dark:text-white"
         >
             <div className="px-5 sm:px-0">
                 <div className="grid grid-cols-12 gap-y-8 gap-x-6">
