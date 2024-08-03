@@ -250,7 +250,6 @@
 
 
 
-
 'use client'
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -311,7 +310,6 @@ const cardsData = [
   },
 ];
 
-
 const ServiceCard = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -370,7 +368,7 @@ const ServiceCard = () => {
       )}
       {isMobile && (
         <Swiper
-          spaceBetween={50}
+          spaceBetween={30}
           centeredSlides={true}
           autoplay={{
             delay: 2500,
@@ -382,22 +380,22 @@ const ServiceCard = () => {
           {cardsData.map((card, id) => (
             <SwiperSlide key={id}>
               <div
-              className='ml-10'
-                style={styles.card }
+                className='ml-10'
+                style={{ ...styles.card, width: '280px', height: '280px' }} // Make the card smaller for mobile
                 onMouseEnter={() => setHoveredIndex(id)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 data-aos="zoom-in"
                 data-aos-delay={`${(id + 1) * 200}`}
               >
-                <div  style={{ ...styles.thumb, backgroundImage: `url(${card.imgSrc})` }}></div>
-                <div  style={{ ...styles.infos, transform: hoveredIndex === id ? `translateY(-${styles.thumb.height})` : 'translateY(0)' }}>
+                <div style={{ ...styles.thumb, backgroundImage: `url(${card.imgSrc})`, height: '200px' }}></div> {/* Make the thumbnail smaller for mobile */}
+                <div style={{ ...styles.infos, height: '250px', transform: hoveredIndex === id ? `translateY(-${styles.thumb.height})` : 'translateY(0)' }}>
                   <h2 style={styles.title}>
                     {card.title}
-                    <span  style={{ ...styles.flag, backgroundImage: `url(${card.image})` }}></span>
+                    <span style={{ ...styles.flag, backgroundImage: `url(${card.image})` }}></span>
                   </h2>
                   <h3 style={styles.date}>{card.date}</h3>
-                  <h3 style={{ ...styles.seats, opacity: hoveredIndex === id ? 1 : 0 }}>{card.seats}</h3>
-                  <p style={{ ...styles.txt, opacity: hoveredIndex === id ? 1 : 0 }}>
+                  <h3  style={{ ...styles.seats, opacity: hoveredIndex === id ? 1 : 0 }}>{card.seats}</h3>
+                  <p className='line-clamp-1 sm:line-clamp-2' style={{ ...styles.txt, opacity: hoveredIndex === id ? 1 : 0 }}>
                     {card.details}
                   </p>
                   <h3 style={{ ...styles.details, opacity: hoveredIndex === id ? 1 : 0 }} onClick={() => handleServiceDetailsClick(id)}>
