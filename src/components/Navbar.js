@@ -248,8 +248,8 @@ export default function Navbar() {
   return (
     <main>
       <div>
-        <header ref={navbarRef} className="flex border-b py-4 px-4 sm:px-16 bg-white font-sans min-h-[70px] tracking-wide relative z-50">
-          <div className="flex flex-wrap items-center gap-4 w-full">
+        <header ref={navbarRef} className="flex  border-b py-4 px-4 sm:px-16 bg-white font-sans min-h-[70px] tracking-wide relative z-50">
+          <div className="flex flex-wrap items-center  gap-4 w-full">
             <Link href={'/'}>
               <Image src={logo} alt="logo" className="w-36" />
             </Link>
@@ -286,7 +286,7 @@ export default function Navbar() {
                       {menuItem.sub_menu && (
                         <ul className="absolute shadow-lg bg-white space-y-3 lg:top-5 max-lg:top-8 -left-6 min-w-[250px] z-50 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500">
                           <li className="border-b py-2">
-                            <Link href={menuItem.sub_url || '/service/1'} className="hover:text-[#1d294f] text-gray-600 text-[15px] font-bold block from-after">
+                            <Link href={menuItem.sub_url || '#'} className="hover:text-[#1d294f] text-gray-600 text-[15px] font-bold block from-after">
                               {menuItem.sub_menu}
                             </Link>
                           </li>
@@ -300,7 +300,7 @@ export default function Navbar() {
 
             <div className="border-l border-[#333] h-6 max-lg:hidden"></div>
 
-            <div className="flex items-center ml-auto space-x-6">
+            {/* <div className="flex items-center ml-auto space-x-6">
               <Link href={'/hosting'}>
                 <p className="px-4 py-2.5 text-sm rounded font-bold text-white border-2 border-[#1d294f] bg-[#1d294f] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#1d294f]">
                   Hosting
@@ -316,7 +316,7 @@ export default function Navbar() {
                   ></path>
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
         </header>
       </div>

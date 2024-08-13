@@ -222,8 +222,7 @@
 
 // export default Testimonial;
 
-
-
+'use client'
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight, faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
@@ -277,7 +276,7 @@ const Testimonial = () => {
     };
 
     if (testimonials.length === 0) {
-        return <p>Loading...</p>;
+        return <div>Loading...</div>;
     }
 
     const { review, name, image, star, designation } = testimonials[index];
@@ -290,7 +289,7 @@ const Testimonial = () => {
                         <div className="flex flex-col md:flex-row gap-y-6 md:gap-x-6">
                             <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className="md:w-1/2 md:py-12">
                                 <div
-                                    className="bg-center bg-no-repeat bg-cover rounded-t-xl sm:rounded-xl h-full min-h-[250px] sm:min-h-[450px]  object-cover"
+                                    className="bg-center bg-no-repeat bg-cover rounded-t-xl sm:rounded-xl h-full min-h-[250px] sm:min-h-[450px] object-cover"
                                     style={{ backgroundImage: `url(${image})` }}
                                 ></div>
                             </div>
@@ -308,7 +307,7 @@ const Testimonial = () => {
                                             className="w-10 h-10 text-[12px] border border-[#1d294f] dark:border-slate-600 rounded-full inline-flex items-center justify-center duration-150 bg-[#F68921] hover:bg-[#e07a19] hover:text-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-200 mr-3"
                                             onClick={() => handleControl("prev")}
                                         >
-                                        <FontAwesomeIcon icon={faChevronLeft} />
+                                            <FontAwesomeIcon icon={faChevronLeft} />
                                         </button>
                                         <button
                                             className="w-10 h-10 text-[12px] border border-[#1d294f] dark:border-slate-600 rounded-full inline-flex items-center justify-center duration-150 bg-[#F68921] hover:bg-[#e07a19] hover:text-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-200 mr-3"
