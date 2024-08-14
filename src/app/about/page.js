@@ -15,7 +15,7 @@ const AboutPage = () => {
   return (
     <div>
       <AboutHeader/>
-      <AboutCard/>
+      {/* <AboutCard/> */}
       <TeamMember/>
       <Numbers/>
     </div>

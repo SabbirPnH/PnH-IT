@@ -1,8 +1,10 @@
 import React from "react";
 import Link from 'next/link'; 
-import contenData from '../../src/data/AboutConten';
+import getAboutUs from "@/lib/AboutUs";
 
-const AboutConten = () => {
+
+const AboutConten = async () => {
+  const about=await getAboutUs()
   return (
        <section className="text-gray-400 bg-[#18181B] body-font">
       <div className="container px-5 pb-10  lg:pb-5 pt-4 sm:py-10  mx-auto">
@@ -11,7 +13,7 @@ const AboutConten = () => {
          
         </h1>
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-          {contenData.map((conten, index) => (
+          {about.map((conten, index) => (
             <div key={index} className=" px-4 md:w-1/2 flex">
               <div className="w-12 h-12 hidden inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4 flex-shrink-0">
                 <svg
@@ -28,11 +30,11 @@ const AboutConten = () => {
                 </svg>
               </div>
               <div className="flex-grow sm:pl-6">
-                <h2 className="text-white text-lg title-font font-medium -mt-7 sm:-mt-0 mb-2">
+                <h2 className="text-white text-sm sm:text-lg title-font font-medium -mt-7 sm:-mt-0 mb-2">
                   {conten.title}
                 </h2>
                 <p className="leading-relaxed text-base line-clamp-2 sm:line-clamp-3 lg:line-clamp-6">
-                  {conten.description}
+                  {conten.percentage}
                 </p>
                 <Link href={`/aboutconten/${conten.id}`}>
                   <button className=" sm:mt-3 text-[#F68921] inline-flex items-center">

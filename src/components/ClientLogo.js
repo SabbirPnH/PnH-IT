@@ -1,43 +1,10 @@
+import getAllClients from "@/lib/ClientsLogo";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
+const Clientimg = async() => {
+	const clientLogo=await getAllClients()
 
-const clientimgs = [
-	{
-		img: "/img/clients/client-1.png",
-		alt: "",
-	},
-	{
-		img: "/img/clients/client-2.png",
-		alt: "",
-	},
-	{
-		img: "/img/clients/client-3.png",
-		alt: "",
-	},
-	{
-		img: "/img/clients/client-4.png",
-		alt: "",
-	},
-	{
-		img: "/img/clients/client-5.png",
-		alt: "",
-	},
-	{
-		img: "/img/clients/client-6.png",
-		alt: "",
-	},
-	{
-		img: "/img/clients/client-1.png",
-		alt: "",
-	},
-	{
-		img: "/img/clients/client-2.png",
-		alt: "",
-	},
-];
-
-const Clientimg = () => {
 	return (
 		
 			<section className="ezy__clients4 light pb-5 lg:py-14 md:pb-10  sm:px-16 xl:px-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
@@ -55,9 +22,9 @@ const Clientimg = () => {
 
 				<Marquee>
 					<div  className="flex justify-center items-center text-center">
-						{clientimgs.map((client, i) => (
+						{clientLogo.map((client, i) => (
 							<img
-								src={client.img}
+								src={client.image}
 								alt={client.alt}
 								className="max-h-20 img-fluid px-12 sm:my-6"
 								key={i}
@@ -74,17 +41,7 @@ const Clientimg = () => {
 export default Clientimg;
 
 
-// import React from "react";
 
-// import Marquee from "react-fast-marquee";
-
-// const Clientimg = () => (
-//   <Marquee>
-//    qwertyujikl
-//   </Marquee>
-// );
-
-// export default Clientimg;
 
 
 

@@ -12,13 +12,13 @@ const ContactPage=()=>{
     return(
         <div>
              <div>
-            <div className="relative w-full pb-10">
+            <div className="relative w-full sm:pb-10">
         <img
           src="/img/bg.jpg"
           alt=""
-          className="h-[430px] w-full object-cover"
+          className=" sm:h-[430px] w-full object-cover"
         />
-        <div className="py-4  gap-4 px-5 absolute inset-0 flex justify-center items-center text-white text-2xl font-bold">
+        <div className="py-4  gap-4 px-5 absolute inset-0 flex justify-center items-center text-white text-md sm:text-2xl font-bold">
           <div>
           <Link href="/" className="hover:text-[#F68921] pt-2">
               Home

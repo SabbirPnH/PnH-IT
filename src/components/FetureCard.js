@@ -5,30 +5,32 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import { Autoplay } from 'swiper/modules';
+import getFeature from "@/lib/Feature";
+
 
 // Features data
-const features = [
-    {
-        icon: '/img/feture.png',
-        title: "5 Years of Experience",
-        description: "We have been working in this field since 2019",
-    },
-    {
-        icon: '/img/team.png',
-        title: "Team Work",
-        description: "We work together like family.",
-    },
-    {
-        icon: '/img/24-7.png',
-        title: "24/7",
-        description: "We ensure maintenance for each moment.",
-    },
-    {
-        icon: '/img/support.png',
-        title: "Online Service",
-        description: "No matter where you are located, we provide service in each place through online as well as offline.",
-    },
-];
+// const features = [
+//     {
+//         icon: '/img/feture.png',
+//         title: "5 Years of Experience",
+//         description: "We have been working in this field since 2019",
+//     },
+//     {
+//         icon: '/img/team.png',
+//         title: "Team Work",
+//         description: "We work together like family.",
+//     },
+//     {
+//         icon: '/img/24-7.png',
+//         title: "24/7",
+//         description: "We ensure maintenance for each moment.",
+//     },
+//     {
+//         icon: '/img/support.png',
+//         title: "Online Service",
+//         description: "No matter where you are located, we provide service in each place through online as well as offline.",
+//     },
+// ];
 
 const FeatureItem = ({ feature, index }) => {
     const delay = index * 200;
@@ -39,10 +41,10 @@ const FeatureItem = ({ feature, index }) => {
             data-aos-delay={delay}
         >
             <div className=" w-[74px] h-[74px] bg-slate-100 dark:bg-[#1E2735] shadow-lg text-[#F68921] rounded-full text-[32px] inline-flex items-center justify-center mb-6 absolute left-0 top-0 -m-6">
-                <img  src={feature.icon} alt={feature.title} />
+                <img  src={feature.image} alt={feature.title} />
             </div>
             <h4 className=" text-xl sm:text-2xl font-bold mb-2 sm:mb-4 ">{feature.title}</h4>
-            <p className="opacity-70 line-clamp-1 sm:line-clamp-none ">{feature.description}</p>
+            <p className="opacity-70 line-clamp-1 sm:line-clamp-none ">{feature.text}</p>
         </div>
     );
 };
@@ -52,7 +54,8 @@ FeatureItem.propTypes = {
     index: PropTypes.number.isRequired,
 };
 
-const Feature = () => {
+const Feature =async () => {
+    const features =await getFeature()
     return (
         <section className="ezy__featured3 light  lg:py-14 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
             <div className="px-2 sm:px-8 xl:px-24">

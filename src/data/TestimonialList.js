@@ -41,7 +41,7 @@ const testimonialList = [
 		},
 		rating: 5,
 		description:
-			"The design they created perfectly captures the essence of our brand and delivers a visually appealing and user-friendly interface. Our website now stands out from our competitors and effectively showcases our products/services.",
+			"The design they created",
 	},
 ];
 

@@ -151,6 +151,7 @@ const SideBar = () => (
 );
 
 const ServiceDetails2 = () => {
+	
 	const params = useParams();
 	const id = params.id;
 	const [service, setService] = useState(null);

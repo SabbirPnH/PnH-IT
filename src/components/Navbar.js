@@ -1,15 +1,19 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
 import '../../src/app/globals.css';
-import Image from 'next/image'; // Correct import for Next.js Image component
+import Image from 'next/image'; 
 import Link from 'next/link';
-import logo from '/public/img/logo.png'; // Correct import for logo
+import logo from '/public/img/logo.png'; 
 
-export default function Navbar() {
+
+
+
+export default  function Navbar() {
+ 
   const toggleOpenRef = useRef(null);
   const toggleCloseRef = useRef(null);
   const collapseMenuRef = useRef(null);
-  const navbarRef = useRef(null); // Ref for the navbar
+  const navbarRef = useRef(null); 
 
   useEffect(() => {
     const handleClick = () => {
@@ -50,10 +54,11 @@ export default function Navbar() {
   return (
     <main>
       <div>
+
         <header ref={navbarRef} className="flex  border-b py-4 px-4 sm:px-16 bg-white font-sans min-h-[70px] tracking-wide relative z-50">
           <div className="flex flex-wrap items-center gap-4 w-full">
             <Link href={'/'} >
-              <Image src={logo} alt="logo" className="w-36" /> {/* Using Next.js Image component */}
+              <Image src={logo} alt="logo" className="w-36" /> 
             </Link>
 
             <div
@@ -82,7 +87,7 @@ export default function Navbar() {
                 <ul className="lg:flex lg:gap-x-8 max-lg:space-y-2">
                   <li className="mb-6 hidden max-lg:block">
                     <Link href={'/'}>
-                      <Image src={logo} alt="logo" className="w-36" /> {/* Using Next.js Image component */}
+                      <Image src={logo} alt="logo" className="w-36" /> 
                     </Link>
                   </li>
                   <li  className="max-lg:border-b max-lg:py-3">
@@ -93,7 +98,7 @@ export default function Navbar() {
                
                   <li className="max-lg:border-b max-lg:py-3">
                     <Link href={'/about'} className="hover:text-[#1d294f] text-gray-600 block font-bold text-[15px] from-after">
-                      About
+                      Team
                     </Link>
                   </li>
                   <li className="group max-lg:border-b max-lg:py-3 relative">
@@ -132,11 +137,7 @@ export default function Navbar() {
                     
                     </ul>
                   </li>
-                  {/* <li className="max-lg:border-b max-lg:py-3">
-                    <a href="javascript:void(0)" className="hover:text-[#1d294f] text-gray-600 block font-bold text-[15px] from-after">
-                      Manage
-                    </a>
-                  </li> */}
+                 
                 </ul>
 
                 <ul className="lg:flex lg:items-center ml-auto max-lg:block lg:space-x-8 ml-auto">
@@ -157,12 +158,10 @@ export default function Navbar() {
             <div className="border-l border-[#333] h-6 max-lg:hidden"></div>
 
             <div className="flex items-center ml-auto space-x-6">
-              {/* <a href="javascript:void(0)" className="hover:text-[#1d294f] text-gray-600 block font-bold text-[15px]">
-                Log in
-              </a> */}
+             
            <Link href={'/hosting'}>
            <p className="px-4 py-2.5 text-sm rounded font-bold text-white border-2 border-[#1d294f] bg-[#1d294f] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#1d294f]">
-               Get Started
+               Hosting
               </p>
            </Link>
 

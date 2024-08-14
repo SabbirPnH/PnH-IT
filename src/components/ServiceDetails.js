@@ -54,7 +54,7 @@ const DetailsPage = () => {
 										184, Razia Plaza
 									</li>
 								</ul>
-								<div className="py-4 flex text-2xl font-bold justify-center items-center gap-4 px-5">
+								<div className="py-4 flex text-md sm:text-2xl font-bold justify-center items-center gap-4 px-5">
 								<div>
 									<Link href="/">
 									<button className="hover:text-[#F68921] pt-2">Home</button>

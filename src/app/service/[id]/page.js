@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
 const ServiceDetailsPage = () => {
   return (
     <ServiceDetails2/>
-  );
+  );  
 };
 
 export default ServiceDetailsPage;
