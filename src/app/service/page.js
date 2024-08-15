@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
 
 const ServicePage=()=>{
 return(
-<div>
+<div className="pb-5">
   <ServiceHeader/>
   <RichContents/>
   <ServiceCard/>
