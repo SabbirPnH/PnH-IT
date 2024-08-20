@@ -264,11 +264,13 @@ const Contents = ({ image, title, desp }) => (
       className="max-h-[600px] w-full rounded-md object-cover"
     />
     <p className="opacity-75 leading-relaxed text-justify mt-12">
-      <span className="text-4xl leading-none text-[#F68921]"></span>{desp}
+      <span className="text-4xl leading-none text-[#F68921]"></span>
+      <span dangerouslySetInnerHTML={{ __html: desp }} />
     </p>
     <Avatar />
   </div>
 );
+
 
 const SideBar = ({ blogs }) => (
   <div>

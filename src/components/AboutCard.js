@@ -210,7 +210,7 @@ const AboutCard = async () => {
                 {item.desp}
               </p>
               <div className="flex flex-col sm:flex-row sm:mt-12">
-                <Link href="/team">
+                <Link href="/about">
                   <button
                     className="hidden sm:block whitespace-nowrap px-10 py-3 border-2 border-[#0b1727] dark:border-white bg-[#1d294f] hover:border-[#1d294f] text-center text-white rounded transition"
                   >

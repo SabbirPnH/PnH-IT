@@ -424,7 +424,7 @@ const DomainDetails = () => {
                                     <div className="row flex-wrap grid lg:grid-cols-3 bg-zinc-900 text-white p-4 sm:p-7 -mx-2">
                                         <div className="col-lg-8 col-span-2 order-2 lg:order-1 px-2" data-aos="fade-up" data-aos-delay="100">
                                             <h3 className="text-2xl font-semibold text-[#F68921]">{title}</h3>
-                                            <p>{desp}</p>
+                                            <p dangerouslySetInnerHTML={{ __html: desp }}/>
                                         </div>
                                         <div className="col-lg-4 col-span-1 order-1 lg:order-2 text-center px-2" data-aos="fade-up" data-aos-delay="200">
                                             <img src={image} alt={title} className="img-fluid ml-12 sm:ml-0" />

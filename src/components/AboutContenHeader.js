@@ -65,7 +65,7 @@ const AboutContenHeader = () => {
 							))}
 						</ul>
 						<div className="mt-12">
-							<Link href={'/aboutconten/1'}>
+							<Link href={'/aboutconten'}>
                             <button className="bg-gray-900 text-white dark:bg-white dark:text-black hover:bg-opacity-90 rounded-md px-5 py-2 transition">
 								Learn More
 							</button>
